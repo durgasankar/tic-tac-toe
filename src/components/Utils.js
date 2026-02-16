@@ -9,12 +9,6 @@ const winningMoves = [
     [2, 4, 6]
 ];
 
-const squares = [
-    null, null, null,
-    'X', 'X', 'O',
-    null, null, null
-];
-
 export const calculateWinner = squares => {
     for(let i = 0; i < winningMoves.length; i++) {
         const [a, b, c] = winningMoves[i];
