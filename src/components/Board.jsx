@@ -1,17 +1,16 @@
-import React, { useId } from "react";
+import React from "react";
 import Square from "./Square";
 
 const Board = ({ squares, onClick }) => {
-    const { id } = useId();
     return (
         <div className="board">
             {
-                squares.map(square => {
+                squares.map((square, index) => {
                     return (
                         <Square
-                            key={id}
+                            key={index}
                             value={square}
-                            onClick={() => onClick(square)}
+                            onClick={() => onClick(index)}
                         />
                     )
                 })

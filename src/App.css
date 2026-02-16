@@ -15,3 +15,8 @@
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   border-radius: 4px;
 }
+
+.red-winner {
+  font-weight: 600;
+  color: green;
+}
